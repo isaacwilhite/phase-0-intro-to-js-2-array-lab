@@ -1,28 +1,27 @@
-// Write your solution here!
-const cats = ["Milo", "Otis", "Garfield"]
-function destructivelyAppendCat(name){
+const cats = ['Milo', 'Otis', 'Garfield']
+function destructivelyAppendCat(name) {
     return cats.push('Ralph')
 }
-function destructivelyPrependCat(name){
-    return cats.unshift("Bob")
+function destructivelyPrependCat(name) {
+    return cats.unshift('Bob')
 }
-function destructivelyRemoveLastCat(name){
+function destructivelyRemoveLastCat() {
     return cats.pop()
 }
-function destructivelyRemoveFirstCat(name){
+function destructivelyRemoveFirstCat() {
     return cats.shift()
 }
-const coolCats = [...cats, "Broom"]
-function appendCat(name){
-    return coolCats
+function appendCat(name) {
+    const copyOfCats = [...cats, 'Broom']
+    return copyOfCats
 }
-const coolerCats = ["Arnold", ...cats]
-function prependCat(name){
-    return coolerCats
+function prependCat(name) {
+    const copyOfCats = ['Arnold', ...cats]
+    return copyOfCats
 }
-function removeLastCat(name){
+function removeLastCat() {
     return cats.slice(0, cats.length - 1)
 }
-function removeFirstCat(name){
+function removeFirstCat(name) {
     return cats.slice(1)
 }
